@@ -9,6 +9,7 @@ body{
     font-family: sans-serif;
 }
 
+/* general three block layout */
 .flex-container{
     display: flex;
 }
@@ -21,7 +22,7 @@ nav{
 }
 
 main{
-    background-color: green;
+    background-color: #141922;
     overflow-y: scroll;
     /* test */
 
@@ -31,12 +32,40 @@ main{
 
 footer{
     height: 90px;
-    background-color: gray;
+    background-color: #282828;
     /* test */
-    
+
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: 10;
+}
+/* end general three block layout */
+
+/* upgrade banner */
+aside{
+    height: 90px;
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.upgrade{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    padding: 15px 40px;
+    border: 1px solid white;
+    border-radius: 25px;
+    
+    font-size: 9px;
+    font-weight: bold;
+    color: white;
 }
