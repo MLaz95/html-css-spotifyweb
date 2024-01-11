@@ -4,3 +4,39 @@
     box-sizing: border-box;
 }
 /* reset */
+
+body{
+    font-family: sans-serif;
+}
+
+.flex-container{
+    display: flex;
+}
+
+nav{
+    background-color: black;
+    /* test */
+
+    width: 230px;
+}
+
+main{
+    background-color: green;
+    overflow-y: scroll;
+    /* test */
+
+    height: calc(100vh - 90px); /*offset for the fixed player at the bottom */
+    flex-grow: 1;
+}
+
+footer{
+    height: 90px;
+    background-color: gray;
+    /* test */
+    
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
