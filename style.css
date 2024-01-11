@@ -93,8 +93,22 @@ ul{
 
 /* style for all sections */
 section h2{
-    font-size: 23px;
+    font-size: 1.5em;
     color: white;
+}
+
+/* track titles */
+section h3{
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: white;
+}
+
+/* sub-titles */
+section h4{
+    margin-top: 0.8em;
+    font-size: 0.8em;
+    color: #797B80;
 }
 
 .row{
@@ -111,8 +125,7 @@ section h2{
     /* height: 275px; */
     width: calc(100% / 6 - 15px);
     min-width: 140px;
-    background-color: green;
-    /* test */
+    
     text-align: center;
 }
 
@@ -121,15 +134,9 @@ section h2{
     margin-bottom: 20px;
 }
 
-.card h3{
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: white;
-}
-
-.card h4{
-    font-size: 13px;
-    color: #797B80;
+/* popolar artists */
+.card .artist{
+    border-radius: 50%;
 }
 
 /* media queries */
