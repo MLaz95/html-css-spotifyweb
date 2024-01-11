@@ -158,27 +158,23 @@ section h4{
 }
 /* end styles for all main sections */
 
-/* media player */
 /* basic footer block layout */
 footer .flex-container{
     justify-content: space-between;
+    height: 90px;
 }
 
-.ft-item{
-    height: 90px;
-    border: 1px dashed white;
-    /* test */
-
-    display: flex;
-    align-items: center;
-
+.ft-item{ 
     min-width: 180px;
     width: 30%;
 
-    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 10px;
 }
 /* end basic footer block layout */
 
+/* track info */
 .ft-item.left{
     gap: 10px;
 }
@@ -209,6 +205,7 @@ footer .flex-container{
 .ft-item.left img{
     max-width: 42px;
 }
+/* end track info */
 
 /* music player */
 .ft-item.center{
@@ -264,6 +261,52 @@ footer .flex-container{
     font-weight: bold;
 }
 /* end music player */
+
+/* footer right side buttons */
+.ft-item.right{
+    justify-content: right;
+    gap: 1em;
+    color: white;
+}
+
+#vol-track{
+    flex-grow: 1;
+    max-width: 25%;
+    height: 4px;
+    position: relative;  
+    border-radius: 2px; 
+    background-color: #797B80;
+}
+
+.vol-setting{
+    width: 25%;    
+    height: 4px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: white;
+}
+/* end footer right side buttons */
+
+/* track and volume decoration */
+.track:hover, #vol-track:hover{
+    cursor: pointer;
+}
+
+.track:hover .track-progress, #vol-track:hover .vol-setting{
+    background-color: #ADFF2F;
+    border-radius: 2px;
+}
+
+.track:hover .track-progress::after, #vol-track:hover .vol-setting::after{
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* end track and volume decoration */
 
 /* media queries */
 @media screen and (max-width:1200px) {
