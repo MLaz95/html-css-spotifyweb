@@ -49,7 +49,7 @@ footer{
 /* upgrade banner */
 aside{
     height: 90px;
-    width: 100%;
+    width: calc(100% - 230px);
     
     position: fixed;
     top: 0;
@@ -58,6 +58,7 @@ aside{
 
     
     background-color: rgba(0, 0, 0, 0.5);
+    transition: width 0.3s;
 }
 
 .upgrade{
@@ -125,7 +126,7 @@ section h4{
     /* height: 275px; */
     width: calc(100% / 6 - 15px);
     min-width: 140px;
-    
+
     text-align: center;
 }
 
@@ -155,5 +156,9 @@ section h4{
 @media screen and (max-width:576px){
     nav{
         width: 50px;
+    }
+
+    aside{
+        width: calc(100% - 50px);
     }
 }
