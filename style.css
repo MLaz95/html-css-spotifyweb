@@ -26,8 +26,12 @@ main{
     overflow-y: scroll;
     /* test */
 
-    height: calc(100vh - 90px); /*offset for the fixed player at the bottom */
+    height: calc(100vh - 90px); /* offset for the fixed player at the bottom */
     flex-grow: 1;
+
+    padding-top: calc(90px + 20px); /* offset for the upgrade banner + padding */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer{
@@ -64,8 +68,23 @@ aside{
     padding: 15px 40px;
     border: 1px solid white;
     border-radius: 25px;
-    
-    font-size: 9px;
+
+
     font-weight: bold;
     color: white;
 }
+/* end upgrade banner */
+
+/* secondary menu */
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+
+    list-style: none;
+    font-weight: bold;
+    color: #797B80;
+}
+/* end secondary menu */
