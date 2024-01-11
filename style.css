@@ -109,7 +109,7 @@ ul{
 }
 /* end secondary menu */
 
-/* style for all sections */
+/* styles for all main sections */
 section h2{
     font-size: 1.5em;
     color: white;
@@ -156,6 +156,87 @@ section h4{
 .card .artist{
     border-radius: 50%;
 }
+/* end styles for all main sections */
+
+/* media player */
+/* basic footer block layout */
+footer .flex-container{
+    justify-content: space-between;
+}
+
+.ft-item{
+    height: 90px;
+    border: 1px dashed white;
+    /* test */
+    display: flex;
+    align-items: center;
+
+    min-width: 180px;
+    width: 30%;
+
+    padding: 0 10px;
+}
+/* end basic footer block layout */
+
+
+.ft-item.left img{
+    max-width: 42px;
+}
+
+/* music player */
+.ft-item.center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 40%;
+    color: white;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 1.3em;
+}
+
+.player .fa-circle-play{
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.play-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.track{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#track{
+    height: 4px;
+    border-radius: 2px;
+    background-color: #797B80;
+    position: relative;
+}
+
+.track-progress{
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: white;
+}
+
+.timecode{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+/* end music player */
 
 /* media queries */
 @media screen and (max-width:1200px) {
