@@ -340,13 +340,29 @@ footer .flex-container{
 .track-title{
     font-size: 0.8em;
     font-weight: bold;
-    color: #797B80;
+    color: white;
+    opacity: 50%;
+}
+
+.track-title:hover{
+    cursor: pointer;
+    opacity: 100%;
+    text-decoration: underline;
 }
 
 .ft-icons{
     display: flex;
     gap: 0.5em;
-    color: #797B80;
+    color: white;
+}
+
+.fa-heart, .fa-folder{
+    filter: opacity(50%);
+}
+
+.fa-heart:hover, .fa-folder:hover{
+    cursor: pointer;
+    filter: opacity(100%);
 }
 
 .ft-item.left img{
@@ -376,6 +392,10 @@ footer .flex-container{
 .player .fa-circle-play{
     margin: 10px;
     font-size: 1.5em;
+}
+
+.fa-circle-play:hover{
+    scale: 1.1;
 }
 
 .play-bar{
