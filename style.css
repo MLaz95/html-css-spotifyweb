@@ -92,6 +92,8 @@ nav a:hover{
 
 .logo{
     height: 40px;
+    scale: 1;
+    transition: scale 0.3s;
 }
 
 .logo-small{
@@ -124,6 +126,8 @@ nav a:hover{
     gap: 15px;
     flex-grow: 1;
     overflow-y: auto;
+    max-width: 100%;
+    transition: max-width 0.3s;
 }
 
 .playlist-button a{
@@ -470,9 +474,11 @@ footer .flex-container{
 }
 
 @media screen and (max-width:576px){
+    /* resizes nav and hides large items */
     nav{
         width: 50px;
         padding: 5px 10px;
+        align-items: center;
     }
 
     .logo{
@@ -484,6 +490,18 @@ footer .flex-container{
         height: 30px;
     }
 
+    .playlists{
+        max-width: 0;
+    }
+
+    .mobile-vanish{
+        display: none;
+    }
+
+    .app{
+        justify-content: center;
+    }
+    
     aside{
         width: calc(100% - 50px);
     }
