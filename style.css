@@ -151,6 +151,15 @@ nav a:hover{
 #playlists a{
     text-decoration: none;
 }
+
+.playlists::-webkit-scrollbar{
+    width: 5px;
+}
+
+.playlists::-webkit-scrollbar-thumb{
+    background-color: #797B80;
+    border-radius: 2px;
+}
 /* end playlist section */
 
 
@@ -349,7 +358,21 @@ section h4{
 .card .artist{
     border-radius: 50%;
 }
+
+main::-webkit-scrollbar{
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track{
+    background-color: #FAFAFA;
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color: #C8C8C8;
+    border-radius: 15px;
+}
 /* end styles for all main sections */
+
 
 /* basic footer block layout */
 footer .flex-container{
