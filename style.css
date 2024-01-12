@@ -16,6 +16,7 @@ body{
 
 nav{
     width: 230px;
+    height: calc(100vh - 90px);
     flex-shrink: 0;
 
     transition: width 0.3s;
@@ -45,6 +46,148 @@ footer{
     background-color: #282828;    
 }
 /* end general three block layout */
+
+/* navbar */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+
+    padding: 20px;
+    font-size: 0.8em;
+    color: white;
+}
+
+/* general list and link styles */
+nav ul{
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    
+    filter: opacity(50%);
+}
+
+nav a.selected{
+    filter: opacity(100%);
+    position: relative;
+}
+
+nav a.selected::before{
+    content: "";
+    height: calc(100% + 10px);
+    width: 3px;
+    background-color: #ADFF2F;
+    position: absolute;
+    left: -20px;
+}
+
+nav a:hover{
+    filter: opacity(100%)
+}
+/* end general list and link styles */
+
+.logo{
+    height: 40px;
+}
+
+.logo-small{
+    display: none;
+}
+
+/* main nav buttons */
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.menu img{
+    width: 22px;
+}
+
+.menu a{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+/* end main nav buttons */
+
+/* playlist section */
+.playlists{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.playlist-button a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.playlist-button .fa-solid{
+    font-size: 40px;
+}
+
+#playlists{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#playlists a{
+    text-decoration: none;
+}
+/* end playlist section */
+
+
+/* user */
+.user{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.app{
+    display: flex;
+    gap: 10px;
+}
+
+.app img{
+    max-width: 12px;
+}
+
+.user-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.user hr{
+    opacity: 50%;
+}
+
+.user-profile img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    
+    border-radius: 50%;
+    background-color: #808080;
+}
+/* end user */
+/* end navbar */
+
 
 /* upgrade banner */
 aside{
@@ -77,7 +220,7 @@ aside{
 /* end upgrade banner */
 
 /* secondary menu */
-ul{
+main ul{
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -329,6 +472,16 @@ footer .flex-container{
 @media screen and (max-width:576px){
     nav{
         width: 50px;
+        padding: 5px 10px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+        height: 30px;
     }
 
     aside{
