@@ -381,7 +381,7 @@ footer .flex-container{
 }
 
 .ft-item{ 
-    min-width: 180px;
+    min-width: 160px;
     width: 30%;
 
     display: flex;
@@ -595,5 +595,9 @@ footer .flex-container{
     
     aside{
         width: calc(100% - 50px);
+    }
+
+    .player{
+        gap: 10px;
     }
 }
