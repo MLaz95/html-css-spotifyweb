@@ -6,7 +6,7 @@
 /* reset */
 
 body{
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* general three block layout */
@@ -125,7 +125,7 @@ nav a:hover{
     flex-direction: column;
     gap: 15px;
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: hidden;
     max-width: 100%;
     transition: max-width 0.3s;
 }
@@ -145,18 +145,18 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    overflow: auto;
 }
 
 #playlists a{
     text-decoration: none;
 }
 
-.playlists::-webkit-scrollbar{
+#playlists::-webkit-scrollbar{
     width: 5px;
 }
 
-.playlists::-webkit-scrollbar-thumb{
+#playlists::-webkit-scrollbar-thumb{
     background-color: #797B80;
     border-radius: 2px;
 }
